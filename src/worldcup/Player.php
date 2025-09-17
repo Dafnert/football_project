@@ -4,6 +4,7 @@ namespace WorldCup;
  class Player extends Person{
 
     private $position;
+<<<<<<< HEAD
     private $age;
      //getter
      public function getAge(){
@@ -14,6 +15,19 @@ namespace WorldCup;
 
      public function setAge($age): void {
         $this->position = $position;
+=======
+    private $name;
+
+    //getter
+
+public function getname() {
+    return $this->name;
+}
+    //setter
+
+    public function setName($name){
+    $this->name = $name;
+>>>>>>> 718beda07dca53618d7dad4858c6f84f5d8dee83
     }
 
     //getter
@@ -21,7 +35,7 @@ namespace WorldCup;
         return $this->position;
 }
 
-    //getter
+    //setter
 
      public function setposition($position): void {
         $this->position = $position;
