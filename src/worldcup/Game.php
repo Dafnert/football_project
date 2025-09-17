@@ -4,6 +4,18 @@ namespace WorldCup;
 
 use DateTime;
 
+require_once 'Person.php';
+require_once 'Player.php';
+require_once 'Coach.php';
+require_once 'Ball.php';
+require_once 'Field.php';
+require_once 'Goalkeeper.php';
+require_once 'Defender.php';
+require_once 'Midfielder.php';
+require_once 'Forward.php';
+require_once 'Team.php';
+ 
+
 $game = new Game();
 $game->main();
 
@@ -11,10 +23,10 @@ $game->main();
  * Class to define the game
  */
 class Game {
-    public $field;
-    public $date;
-    public $ball;
-    public $teams;
+    private $field;
+    private $date;
+    private $ball;
+    private $teams;
 
     public function getField() {
         return $this->field;
