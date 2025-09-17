@@ -16,8 +16,11 @@ namespace WorldCup;
         $this->position = $position;
     }
 
- public function passBall() {
+    public function passBall() {
         echo "Passing\n";
+    }
+    public function injury() {
+        echo "Injuring\n";
     }
 
 } 
