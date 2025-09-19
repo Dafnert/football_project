@@ -41,4 +41,8 @@ class Forward extends Player {
         $effect = $effects[array_rand($effects)];
         echo "kicking $effect\n";
     }
+    
+    public function penalty (){
+        echo "scoring a penalty". "\n";
+    }
 }
